@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo modprobe can can-raw can-dev
+sudo modprobe can
+sudo modprobe can_raw
+sudo modprobe can_dev
 
 # sudo insmod ./slcanx_module/slcanx.ko
 sudo insmod ./slcanx_module/slcanx.ko tx_batch_us=125
