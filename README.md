@@ -2,7 +2,9 @@
 Four-channel CANFD Analyzer
 
 Introduction to the file or folders:
-- `u20_k515_slcanx/`: SlcanX driver and scripts for Ubuntu 20.04 with Kernel 5.15.x
+- `u20_k515_slcanx/`: 
+  - SlcanX driver and scripts for Ubuntu 20.04 with Kernel 5.15.x
+  - Target platform: NVIDIA Orin Ubuntu 22.04 with Kernel 5.15.x (can2 can3 can4 can5)
 - `u22_k68_slcanx/`: SlcanX driver and scripts for Ubuntu 22.04 with Kernel 6.8.x
 - `u24_k614_slcanx/`: SlcanX driver and scripts for Ubuntu 24.04 with Kernel 6.14.x
 
