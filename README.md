@@ -4,6 +4,7 @@ Four-channel CANFD Analyzer
 Introduction to the file or folders:
 - `u20_k515_slcanx/`: SlcanX driver and scripts for Ubuntu 20.04 with Kernel 5.15.x
 - `u22_k68_slcanx/`: SlcanX driver and scripts for Ubuntu 22.04 with Kernel 6.8.x
+- `u24_k614_slcanx/`: SlcanX driver and scripts for Ubuntu 24.04 with Kernel 6.14.x
 
 
 Recovery:
@@ -21,4 +22,4 @@ Notice:
 - `ip -d -s link show can0` can be used to display detailed statistics of the CAN interface.
 
 Send Tests:
-- `cangen can0 -g 0.002 -I 555 -L 0 -b` in 2 terminal windows for sending CAN frames at 1Mbps + 5Mbps
+- `cangen can0 -g 0.01 -I 555 -L 0 -b` in 2 terminal windows for sending CAN frames at 1Mbps + 5Mbps, about 2.8W frames/s
