@@ -1,0 +1,10 @@
+[package]
+name = "cangw_rs_tokio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+socketcan = "3.5"
+anyhow = "1.0"
+futures = "0.3"
