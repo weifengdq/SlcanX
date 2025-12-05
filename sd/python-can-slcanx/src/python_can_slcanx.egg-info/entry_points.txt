@@ -1,0 +1,2 @@
+[can.interface]
+slcanx = slcanx.bus:SlcanxBus

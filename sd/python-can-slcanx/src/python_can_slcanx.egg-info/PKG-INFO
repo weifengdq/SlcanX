@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: python-can-slcanx
+Version: 0.1.0
+Summary: Python-can interface for SLCANX protocol (4-channel SLCAN)
+Project-URL: Homepage, https://github.com/yourusername/python-can-slcanx
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: python-can>=4.0.0
+Requires-Dist: pyserial>=3.0
+
+# SLCANX Interface for python-can
+
+This package provides a `python-can` interface for the SLCANX protocol, which supports 4 CAN channels over a single USB CDC ACM serial port.
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+```python
+import can
+
+# Open channel 0 on COM3
+bus0 = can.Bus(interface='slcanx', channel='COM3', slcanx_channel=0, bitrate=500000)
+
+# Open channel 1 on COM3 (shares the same serial port)
+bus1 = can.Bus(interface='slcanx', channel='COM3', slcanx_channel=1, bitrate=500000)
+
+msg = can.Message(arbitration_id=0x123, data=[0, 1, 2, 3, 4, 5, 6, 7], is_extended_id=False)
+bus0.send(msg)
+
+for msg in bus0:
+    print(msg)
+```
+
+## Protocol
+
+See `slcan.md` for protocol details.
