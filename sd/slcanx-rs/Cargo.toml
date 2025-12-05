@@ -1,0 +1,19 @@
+[package]
+name = "slcanx"
+version = "0.1.0"
+edition = "2021"
+description = "Rust interface for SLCANX protocol (4-channel SLCAN)"
+
+[dependencies]
+serialport = "4.2"
+anyhow = "1.0"
+thiserror = "1.0"
+log = "0.4"
+crossbeam-channel = "0.5"
+hex = "0.4"
+bitflags = "2.4"
+
+[dev-dependencies]
+clap = { version = "4.4", features = ["derive"] }
+env_logger = "0.10"
+ctrlc = "3.4"
