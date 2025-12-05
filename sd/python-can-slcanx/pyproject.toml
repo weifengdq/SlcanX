@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-can-slcanx"
+version = "0.1.0"
+description = "Python-can interface for SLCANX protocol (4-channel SLCAN)"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-can>=4.0.0",
+    "pyserial>=3.0",
+]
+
+[project.entry-points."can.interface"]
+slcanx = "slcanx.bus:SlcanxBus"
+
+[project.urls]
+"Homepage" = "https://github.com/weifengdq/SlcanX/sd/python-can-slcanx"

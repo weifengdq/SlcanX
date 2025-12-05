@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/python_can_slcanx.egg-info/PKG-INFO
+src/python_can_slcanx.egg-info/SOURCES.txt
+src/python_can_slcanx.egg-info/dependency_links.txt
+src/python_can_slcanx.egg-info/entry_points.txt
+src/python_can_slcanx.egg-info/requires.txt
+src/python_can_slcanx.egg-info/top_level.txt
+src/slcanx/__init__.py
+src/slcanx/bus.py
