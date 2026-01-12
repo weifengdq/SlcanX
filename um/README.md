@@ -156,6 +156,11 @@ data=(80_1_11_4_4_1 80_1_11_4_4_1 80_1_11_4_4_1 80_1_11_4_4_1)
 
 ![image-20251205142401903](README.assets/image-20251205142401903.png)
 
+注意:
+
+- ID范围限制: 标准帧超过 0x7FF 时按 0x7FF 发送, 扩展帧超过 0x1FFFFFFF 时按 0x1FFFFFFF 发送
+- 由于协议是单向的, 超过一定帧率范围(如15000帧/s)时, 会出现发送比接收数量多的情况, 以接收数量为准, 如发送帧率 3W, 接收帧率 2W7.
+
 ### 查询上位机版本
 
 ![image-20260106145931727](README.assets/image-20260106145931727.png)
@@ -277,7 +282,7 @@ cd slcanx_module && make && cd ..
 - 引出了串口Boot, 对应CAN0使用的引脚 PA00 PA01, 对应隔离版上的贴片焊盘, 可手工焊线, ~~众所周知~~, HPM53xx 只有 100PIN 封装的才有 USB Boot, 其余封装只有 UART Boot, 按下Boot后插入USB, 搭配 [HPM Manufacturing Tool-软件开发资料-先楫半导体](https://www.hpmicro.com/design-resources/development-software/10) 使用
   - ![image-20260106153712101](README.assets/image-20260106153712101.png)
 - JTAG 和 UART Boot 焊盘在 PCB 的位置:
-  - 
+  - ![image-20260107104117791.png](README.assets/image-20260107104117791.png)
 
 ## 购买方式与交流群
 
