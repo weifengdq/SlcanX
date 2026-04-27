@@ -1,5 +1,5 @@
 # SlcanX
-Four-channel CANFD Analyzer
+Four-channel CANFD Analyzer, [user manual 用户手册](./um/README.md)
 
 Introduction to the file or folders:
 - `u20_k515_slcanx/`: 
