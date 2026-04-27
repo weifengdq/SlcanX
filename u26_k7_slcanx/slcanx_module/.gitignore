@@ -1,0 +1,6 @@
+*
+!Makefile
+!.gitignore
+!slcan.h
+!slcan-core.c
+!slcan-ethtool.c
